@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FourthViewController" customModule="ForNC" customModuleProvider="target">
+            <connections>
+                <outlet property="but" destination="Yyj-0n-S5c" id="YWT-4T-5Rm"/>
+                <outlet property="heightCon" destination="8Ly-jF-8wU" id="dTO-Lj-WWy"/>
+                <outlet property="v" destination="fgj-h0-sSG" id="Ole-N0-mpS"/>
+                <outlet property="view" destination="iN0-l3-epB" id="0wY-KX-BMs"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yyj-0n-S5c">
+                    <rect key="frame" x="137.5" y="318.5" width="100" height="30"/>
+                    <color key="backgroundColor" red="0.0" green="0.79215686269999996" blue="0.69411764710000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Cjm-aM-Qh5"/>
+                        <constraint firstAttribute="width" constant="100" id="bNm-qT-pLN"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="action:" destination="-1" eventType="touchUpInside" id="usF-Ei-gG9"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fgj-h0-sSG">
+                    <rect key="frame" x="0.0" y="517" width="375" height="150"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="8Ly-jF-8wU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Yyj-0n-S5c" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="19H-9T-ZfL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="fgj-h0-sSG" secondAttribute="bottom" id="2zg-kR-JLr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fgj-h0-sSG" secondAttribute="trailing" id="GgF-bv-5tj"/>
+                <constraint firstItem="fgj-h0-sSG" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="R7l-XM-w1x"/>
+                <constraint firstItem="Yyj-0n-S5c" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="dez-0t-ywz"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="139" y="153"/>
+        </view>
+    </objects>
+</document>
